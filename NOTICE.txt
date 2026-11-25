@@ -1,3 +1,10 @@
+NOTE POUR CE DEPOT GITHUB : le moteur Spirula (runtime/), les archives de sources amont
+(Spirula_Upstream_Source_*.zip), Node.js et SplatTransform ne sont PAS inclus dans ce depot.
+Les paragraphes ci-dessous decrivent le package complet d'origine. Pour obtenir le moteur
+et ses sources : https://github.com/harry7557558/spirula-studio (voir runtime/README.md).
+Les ajouts de novembre 2026 (spirula_clean, spirula_polish, spirula_runtime, spirula_tools,
+pythonrc.py, tests) n'ont pas de licence propre ; voir README.md, section Licences.
+
 Spirula Houdini integration, 2026.
 Integration source code is distributed under GNU GPL version 3 (LICENSE.txt).
 Spirula Studio runtime: harry7557558/spirula-studio, release v2026.10.16,
