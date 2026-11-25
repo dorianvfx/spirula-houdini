@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pythonPanelDocument>
+ <interface name="spirula_studio" label="Spirula Studio" icon="SOP_bakegsplat">
+  <script><![CDATA[
+def onCreateInterface():
+    import spirula_studio_panel
+    return spirula_studio_panel.Panel()
+]]></script>
+ </interface>
+ <interface name="spirula_training_web" label="Spirula — suivi entraînement CLI" icon="SOP_bakegsplat">
+  <script><![CDATA[
+def onCreateInterface():
+    import spirula_web_panel
+    return spirula_web_panel.Panel()
+]]></script>
+ </interface>
+</pythonPanelDocument>

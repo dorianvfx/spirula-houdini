@@ -1,0 +1,28 @@
+﻿# Environnement
+runtime/*
+!runtime/README.md
+examples/*
+!examples/README.md
+
+# Données lourdes ou privées
+*.ply
+*.hip
+*.hipnc
+*.hiplc
+*.bgeo
+*.bgeo.sc
+*.zip
+*.ckpt
+*.exe
+*.dll
+
+# Python / outils
+__pycache__/
+*.pyc
+backup/
+
+# Sorties de calcul
+polish_runs/
+courbe_entrainement/
+Projets/
+Polish/

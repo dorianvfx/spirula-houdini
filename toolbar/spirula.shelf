@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <toolshelf name="spirula" label="Spirula"><memberTool name="spirula_pipeline"/><memberTool name="spirula_architecture"/><memberTool name="spirula_studio_create"/><memberTool name="spirula_refinement"/><memberTool name="spirula_clean"/><memberTool name="spirula_polish"/></toolshelf>
+  <tool name="spirula_refinement" label="Spirula Raffinement local" icon="SOP_bakegsplat"><toolMenuContext name="network"><contextNetType>SOP</contextNetType></toolMenuContext><toolMenuContext name="viewer"><contextNetType>SOP</contextNetType></toolMenuContext><toolSubmenu>Spirula</toolSubmenu><script scriptType="python"><![CDATA[import spirula_refine
+spirula_refine.create()]]></script></tool>
+  <tool name="spirula_clean" label="Spirula Nettoyer les floaters" icon="SOP_bakegsplat"><toolMenuContext name="network"><contextNetType>SOP</contextNetType></toolMenuContext><toolMenuContext name="viewer"><contextNetType>SOP</contextNetType></toolMenuContext><toolSubmenu>Spirula</toolSubmenu><script scriptType="python"><![CDATA[import spirula_clean
+spirula_clean.create()]]></script></tool>
+  <tool name="spirula_polish" label="Spirula Raffiner par apprentissage" icon="SOP_bakegsplat"><toolMenuContext name="network"><contextNetType>SOP</contextNetType></toolMenuContext><toolMenuContext name="viewer"><contextNetType>SOP</contextNetType></toolMenuContext><toolSubmenu>Spirula</toolSubmenu><script scriptType="python"><![CDATA[import spirula_polish
+spirula_polish.create()]]></script></tool>
+  <tool name="spirula_studio_create" label="Spirula Studio" icon="SOP_bakegsplat">
+    <toolMenuContext name="viewer"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext>
+    <toolMenuContext name="network"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext>
+    <toolSubmenu>Spirula</toolSubmenu>
+    <script scriptType="python"><![CDATA[import spirula_houdini
+spirula_houdini.create()]]></script>
+  </tool>
+  <tool name="spirula_surface" label="Spirula Object to Splat · Avancé" icon="SOP_bakegsplat">
+    <toolMenuContext name="viewer"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext><toolMenuContext name="network"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext>
+    <toolSubmenu>Spirula</toolSubmenu><script scriptType="python"><![CDATA[import spirula_tools
+spirula_tools.run('surface')]]></script></tool>
+  <tool name="spirula_render" label="Spirula Render to Splat · Avancé" icon="SOP_bakegsplat">
+    <toolMenuContext name="viewer"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType><contextNetType>LOP</contextNetType></toolMenuContext><toolMenuContext name="network"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType><contextNetType>LOP</contextNetType></toolMenuContext>
+    <toolSubmenu>Spirula</toolSubmenu><script scriptType="python"><![CDATA[import spirula_tools
+spirula_tools.run('render')]]></script></tool>
+  <tool name="spirula_assemble" label="Spirula Assemble Splats · Avancé" icon="SOP_bakegsplat">
+    <toolMenuContext name="viewer"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext><toolMenuContext name="network"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext>
+    <toolSubmenu>Spirula</toolSubmenu><script scriptType="python"><![CDATA[import spirula_tools
+spirula_tools.run('assemble')]]></script></tool>
+  <tool name="spirula_cut" label="Spirula Cut Splats · Avancé" icon="SOP_bakegsplat">
+    <toolMenuContext name="viewer"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext><toolMenuContext name="network"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext>
+    <toolSubmenu>Spirula</toolSubmenu><script scriptType="python"><![CDATA[import spirula_tools
+spirula_tools.run('cut')]]></script></tool>
+<tool name="spirula_insert" label="Spirula Insert Lit Object · Avancé" icon="SOP_bakegsplat">
+<toolMenuContext name="network"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext><toolMenuContext name="viewer"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext><toolSubmenu>Spirula</toolSubmenu><script scriptType="python"><![CDATA[import spirula_tools
+spirula_tools.run('insert')]]></script></tool>
+<tool name="spirula_pipeline" label="Spirula Pipeline" icon="SOP_bakegsplat"><toolMenuContext name="network"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext><toolMenuContext name="viewer"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType></toolMenuContext><toolSubmenu>Spirula</toolSubmenu><script scriptType="python"><![CDATA[import spirula_tools
+spirula_tools.run('pipeline')]]></script></tool>
+<tool name="spirula_architecture" label="Spirula Scene Karma" icon="SOP_bakegsplat"><toolMenuContext name="network"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType><contextNetType>LOP</contextNetType></toolMenuContext><toolMenuContext name="viewer"><contextNetType>OBJ</contextNetType><contextNetType>SOP</contextNetType><contextNetType>LOP</contextNetType></toolMenuContext><toolSubmenu>Spirula</toolSubmenu><script scriptType="python"><![CDATA[import spirula_tools
+spirula_tools.run('architecture')]]></script></tool>
+</shelfDocument>

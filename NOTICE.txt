@@ -1,0 +1,9 @@
+Spirula Houdini integration, 2026.
+Integration source code is distributed under GNU GPL version 3 (LICENSE.txt).
+Spirula Studio runtime: harry7557558/spirula-studio, release v2026.10.16,
+commit 65246c5. Distributed unmodified, under its upstream license.
+Corresponding upstream source is included as Spirula_Upstream_Source_v2026.10.16.zip.
+Third-party notices and license files are contained in that source archive.
+Houdini is a product of Side Effects Software and is not redistributed here.
+
+Research integration 7.2: PlayCanvas SplatTransform 3.10.3 (MIT), with dependency licenses in runtime/splat-tools/node_modules; Node.js v24.22.1 with license in runtime/node/LICENSE.txt. Spirula 2026.10.30 official Vulkan binary and source archive are provided alongside 2026.10.16; see runtime/versions/2026.10.30/PROVENANCE.json.
